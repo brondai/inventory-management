@@ -1,0 +1,1 @@
+{\n  "compilerOptions": {\n    "strict": true,\n    "baseUrl": ".",\n    "paths": {\n      "@brondai/db": ["./path/to/db"],\n      "@brondai/types": ["./path/to/types"]\n    }\n  }\n}
