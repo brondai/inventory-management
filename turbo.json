@@ -1,1 +1,13 @@
-{\n  "pipeline": {\n    "build": {\n      "dependsOn": ["^build"],\n      "outputs": ["dist/**"]\n    },\n    "dev": {\n      "cache": false,\n      "outputs": []\n    },\n    "lint": {\n      "dependsOn": ["^lint"],\n      "outputs": []\n    },\n    "db:generate": {\n      "dependsOn": ["build"],\n      "outputs": ["generated/**"]\n    },\n    "db:migrate": {\n      "dependsOn": ["db:generate"],\n      "outputs": []\n    }\n  }\n}
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".output/**", ".vinxi/**"]
+    },
+    "dev": { "persistent": true, "cache": false },
+    "lint": {},
+    "db:generate": { "cache": false },
+    "db:migrate": { "cache": false }
+  }
+}

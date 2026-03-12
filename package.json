@@ -1,1 +1,16 @@
-{\n  "name": "inventory-management",\n  "private": true,\n  "workspaces": [\n    "packages/*"\n  ],\n  "devDependencies": {\n    "turborepo": "latest"\n  },\n  "scripts": {\n    "dev": "turbo dev",\n    "build": "turbo build",\n    "lint": "turbo lint"\n  }\n}
+{
+  "name": "my-app",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "db:generate": "turbo run db:generate --filter=@my-app/db",
+    "db:migrate": "turbo run db:migrate --filter=@my-app/db"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}
