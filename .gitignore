@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+
+# Build output
+/dist/
+/build/
+
+# Environment variable files
+.env
+
+# macOS system files
+.DS_Store
+
+# Visual Studio Code files
+.vscode/
+
+# JetBrains IDE files
+.idea/
