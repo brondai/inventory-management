@@ -1,0 +1,1 @@
+{\n  "name": "inventory-management",\n  "private": true,\n  "workspaces": [\n    "packages/*"\n  ],\n  "devDependencies": {\n    "turborepo": "latest"\n  },\n  "scripts": {\n    "dev": "turbo dev",\n    "build": "turbo build",\n    "lint": "turbo lint"\n  }\n}
